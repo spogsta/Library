@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <table id="header-table">
+    <tr>
+        <th>Titlea</th>
+        <th>Author</th>
+        <th>Pages</th>
+        <th>Read?</th>
+        <th>change read</th>
+        <th>Delete row</th>
+    </tr>
+
+
+</table>
+
+<!-- these get erased, just a nice placeholder to see how it's structured-->
+    <table id="table">
+        <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Pages</td>
+            <td>Read?</td>
+        
+            <td>Delete row</td>
+        </tr>
+
+
+    </table>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Add a new book</button>
+
+
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Add a new book to the library!</p>
+    
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" value="">
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" value="">
+      <label for="pages">Pages</label>
+      <input type="text" id="pages" name="pages" value="">
+      <label for="read">Read?</label>
+      <input type="checkbox" id="read" name="" value="">
+      <input type="button" value="Submit" onclick="formSubmit()">
+      
+    
+  </div>
+
+</body>
+
+
+
+
+<script src="script.js"></script>
+
+</html>
